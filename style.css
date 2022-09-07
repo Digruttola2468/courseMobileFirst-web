@@ -1,0 +1,31 @@
+/* Forma de acomodar los estilos
+1. Posicionamiento (position absolute, relative)
+2. Modelo Caja (Box model) (margin padding)
+3. Tipografia (fuentes tipos de fuentes)
+4. Visuales
+5. Otros
+*/
+
+/*Variables*/
+:root {
+    /* colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #FFE9D5;
+    --secundary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
