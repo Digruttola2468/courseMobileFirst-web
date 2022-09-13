@@ -17,6 +17,7 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
+    --off-black: #282623;
 }
 
 * {
@@ -263,4 +264,106 @@ main {
     font-weight: 300px;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+.main-product-detail  {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+
+    padding: 20px 10px;
+    margin-top: 50px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    /*
+    Es importante saber que el padre si esta en position relative
+    ya que absolute va a buscar al primer contenedor padre que tenga 
+    un position relative, si nosotros sacamos el relative del padre (.main-product-detail)
+    estaria al siguiente componente que contenga relative hasta llegar al body
+    */
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    
+    top: -11px;
+    left: calc(50% - 20px);
+
+    background-image: url(./pictures/VectorTitle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    text-align: center;
+}
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--off-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.imagenLogos {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clock {
+    background-image: url(./pictures/clock.svg);
+}
+.eye {
+    background-image: url(./pictures/eye.png);
+}
+.money {
+    background-image: url(./pictures/dollarSign.svg);
+}
+.checkOk {
+    background-image: url(./pictures/check-circle.svg);
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
