@@ -169,14 +169,27 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    flex-direction: row;
+    height: 416px;
+
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 300px;
 
-    margin: 0 auto;
+    scroll-snap-align: center;
 
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-right: 25px;
     font-family: "Inter" , sans-serif;
 }
 
@@ -187,6 +200,14 @@ main {
     line-height: 2.3rem;
 
     color: var(--bitcoin-orange);
+}
+.main-currency-table .currency-table--comisiones {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+
+    color: var(--secundary-blue);
 }
 
 .currency-table--container {
@@ -249,7 +270,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.currency-table--date {
+.currency-table--date-monedas {
     width: 190px;
     height: 30px;
     
@@ -261,11 +282,24 @@ main {
     border-radius: 8px;
 }
 
-.currency-table--date p {
+.currency-table--date-comisiones p,
+.currency-table--date-monedas p {
     font-size: 1.2rem;
     font-weight: 300px;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+.currency-table--date-comisiones {
+    width: 190px;
+    height: 30px;
+    
+    margin: 0 auto;
+    margin-top: 15px;
+
+    padding: 8px;
+    background-color: #E7F5FF;
+    border-radius: 8px;
 }
 
 .main-product-detail  {

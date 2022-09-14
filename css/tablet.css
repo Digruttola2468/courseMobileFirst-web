@@ -26,3 +26,7 @@
 .plans-container--slider {
     overflow-x: hidden;
 }
+
+.main-tables-container {
+    overflow-x: hidden;
+}
