@@ -526,6 +526,8 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--off-black);
+
+    cursor: pointer;
 }
 .btRecomendado {
     border: 3px solid var(--bitcoin-orange);

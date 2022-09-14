@@ -103,3 +103,30 @@ Creamos las variables en css
 }
 ```
 
+## Media Queries
+
+Nos aseguramos que nuestro diseño mobile first pueda ser compatible en cualquier tamaño cagantizando una buena experiencia al usuario.
+
+Inciamos creando una carpeta nueva de estilos creando un nuevo archivo de la dimension que vamos a modificar por ejemplo tablet.css. 
+
+Luego agremos a nuestro html el archivo table.css y quedaria asi 
+
+```HTML
+<head>
+    ...
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+</head>
+```
+
+Pero si abrimos la pagina desde un celular se cargaria tambien el archivo de tablet, probocaria que la pagina se ponga lenta ya que tiene que cargar dos estilos.
+Para ello existe los media queries :
+
+```HTML
+...
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+</head>
+```
